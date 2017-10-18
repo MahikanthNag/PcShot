@@ -18,15 +18,6 @@
         android:text=""
         android:id="@+id/tv"/>
     <Button
-        android:id="@+id/refresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Refresh"
-        android:textColor="@android:color/white"
-        android:onClick="testOnClickListener"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/button_selector" />
-    <Button
         android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

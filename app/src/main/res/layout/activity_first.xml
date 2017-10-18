@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.l.myapplication.FirstActivity">
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:keepScreenOn="true"
+        android:text="Download 'PCShot' Chrome Extension on your PC To use this App"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/downloaded_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_selector"
+        android:text="Already Downloaded ?"
+        android:textColor="@android:color/white" />
+</FrameLayout>

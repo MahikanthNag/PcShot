@@ -32,7 +32,10 @@ var myCtrl = myApp.controller("myCtrl", function($scope, $http)
       };
       firebase.initializeApp(config);
       var database = firebase.database();
-      database.ref('ImageData').set({
+      console.log('ImageData'+$scope.emailid);
+      var email = $scope.emailid.replace("@", "");
+      email = email.replace(".","");
+      database.ref('ImageData_'+email).set({
         "image": image
       });
       // $http.post('https://fcm.googleapis.com/fcm/send', image).success(function(data, status, headers, config) {
