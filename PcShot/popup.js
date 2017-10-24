@@ -38,22 +38,7 @@ var myCtrl = myApp.controller("myCtrl", function($scope, $http)
       database.ref('ImageData_'+email).set({
         "image": image
       });
-      // $http.post('https://fcm.googleapis.com/fcm/send', image).success(function(data, status, headers, config) {
-      //      $scope.zipCodes = data;
-      // }).error(function(error, status, headers, config) {
-      //      console.log(status);
-      //      console.log("Error occured");
-      //   });
      });             
     };
-    $scope.takeSnapshot = takeSnapshot;
-// var ajax = new XMLHttpRequest();
-//     ajax.open("POST",'http://mahikanthnag.net23.net/imageSave.php',true);
-//     ajax.setRequestHeader("Content-type","application/upload");
- 
-//     ajax.send(image);
-
-
- 
-    
+    $scope.takeSnapshot = takeSnapshot;    
  });   
