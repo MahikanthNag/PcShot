@@ -1,0 +1,17 @@
+<html>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+	<script src="./angular.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
+	<script src="./fire.js"></script>
+	<script type="text/javascript" src="popup.js"></script>
+
+	<b>Email id: </b>
+	<input type="text" ng-model="emailid">
+
+	<input type="button" value="Capture" ng-click="takeSnapshot();">
+</body>
+
+</html>
